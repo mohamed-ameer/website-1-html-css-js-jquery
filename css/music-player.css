@@ -1,0 +1,147 @@
+.music-player{
+    width:350px;
+    height:550px;
+    border-radius: 20px;
+    background:rgba(255, 255, 255, 0.08) ;
+    box-shadow: 0 40px 100px rgba(255, 255, 255, 0.1);
+    padding:30px;
+    overflow: hidden;
+    color: #fff;
+}
+.music-name,
+.artist-name{
+    text-align: center;
+    text-transform: capitalize;
+}
+.music-name{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.artist-name{
+    font-size: 20px;
+}
+.disk{
+    position: relative;
+    display: block;
+    margin: 40px auto;
+    width:180px ;height:180px ;
+    border-radius: 50%;
+    background-image:url('../images/cover\ 1.png');
+    background-size: cover;
+    background-position: center;
+    box-shadow:0 0 0 10px rgba(255, 255, 255, 0.08) ;
+    animation: rotate 20s linear infinite;
+    animation-play-state:running;
+}
+.disk.play{
+    animation-play-state:paused;
+}
+.disk::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #051024;
+    width: 30px;height: 30px;
+    border-radius: 50%;
+}
+.song-slider{
+    position: relative;
+    width: 100%;
+}
+.seek-bar{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #1a2f56;
+    cursor: pointer;
+    overflow: hidden;
+}
+.seek-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 1px;height: 20px;
+    background-color: #000;
+    box-shadow: -400px 0 0 400px #ff275e;
+
+}
+.current-time,
+.song-duration{
+    font-size: 14px;
+}
+.song-duration{
+    position: absolute;
+    right: 0;
+}
+
+.controls{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+}
+.play-btn{
+    position: relative;
+    width: 60px;height: 60px;
+    border-radius: 50%;
+    background-color: #051024;
+    border: none;
+    cursor: pointer;
+    animation: pulse 2s linear infinite;
+    animation-play-state:running;
+}
+.play-btn span{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 30px;
+    border-radius: 2px;
+    background-color: #ff275e;
+    transition:0.5s ;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+}
+.play-btn span:nth-child(2){
+    left: 55%;
+    transform-origin: center;
+}
+.play-btn.pause span:nth-child(2){
+    transform: translateY(-50%) scaleY(0);
+}
+.play-btn.pause span:nth-child(1){
+    clip-path: polygon(100% 50%, 100% 50%, 0 100%, 0 0);
+    width: 35%;
+    left: 53%;
+    transform: translate(-50%,-50%);
+    border-radius: 0;
+}
+.play-btn.pause{
+    animation: none;
+    animation-play-state:paused;
+}
+@keyframes pulse {
+    0%{box-shadow:0;}
+    50%{box-shadow:0 0 0 5px rgba(255, 255, 255, 0.1);}
+    100%{box-shadow:0 0 0 5px rgba(255, 255, 255, 0.4);}
+}
+
+.btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #051024;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+@keyframes rotate {
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website 1 (Music)</title>
+    <link rel="icon" href="images/musiclogo.png">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <audio src="" id="audio"></audio>
+    <div class="loader-container">
+      <span class="loader"></span>
+    </div>
+    <!-- start navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="row align-center justify-content-between">
+                <div class="logo">
+                    <a href="#home"><img src="images/logo.png" alt="song"></a>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#tours">Tours</a></li>
+                        <li><a href="#music">Music</a></li>
+                        <li><a href="#gallary">Gallary</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#artists">Artists</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <form action="" class="search-bar">
+                    <input type="text" placeholder="search anything..." name="q">
+                      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  </form>
+                <div class="icons">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+                <div class="toggle" onclick="this.classList.toggle('active')">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 200 200">
+                          <g stroke-width="6.5" stroke-linecap="round">
+                            <path
+                              d="M72 82.286h28.75"
+                              fill="#009100"
+                              fill-rule="evenodd"
+                              stroke="#fff"
+                            />
+                            <path
+                              d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
+                              fill="none"
+                              stroke="#fff"
+                            />
+                            <path
+                              d="M72 125.143h28.75"
+                              fill="#009100"
+                              fill-rule="evenodd"
+                              stroke="#fff"
+                            />
+                            <path
+                              d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
+                              fill="none"
+                              stroke="#fff"
+                            />
+                            <path
+                              d="M100.75 82.286h28.75"
+                              fill="#009100"
+                              fill-rule="evenodd"
+                              stroke="#fff"
+                            />
+                            <path
+                              d="M100.75 125.143h28.75"
+                              fill="#009100"
+                              fill-rule="evenodd"
+                              stroke="#fff"
+                            />
+                          </g>
+                        </svg>
+                </div>
+                <div class="toggle-list">
+                    <ul>
+                      <li><a href="#home">Home</a></li>
+                      <li><a href="#tours">Tours</a></li>
+                      <li><a href="#music">Music</a></li>
+                      <li><a href="#gallary">Gallary</a></li>
+                      <li><a href="#blog">Blog</a></li>
+                      <li><a href="#artists">Artists</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- start header -->
+    <section class="header" id="home">
+        <div class="cover">
+            <div class="container">
+                <div class="info">
+                    <span>new tour</span>
+                    <h2>rock on</h2>
+                    <p>jungle band will sing jungle</p>
+                    <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nesciunt et provident veniam<br>laboriosam qui doloribus eos rerum molestias. Alias obcaecati nihil.</p>
+                    <button class="main-btn">join the tour</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end header -->
+    <!-- start tours -->
+    <section class="tours" id="tours">
+      <div class="container">
+        <div class="heading">
+          <h2>upcoming tour</h2>
+          <img src="images/head.png"/>
+          <p>rise your emition & wishes to expend pleasure time with us</p>
+        </div>
+        <div class="row gy-5 pt-5 pb-5">
+          <div class="tour-info col-lg-6">
+            <div class="info-content ">
+              <div class="info-content-date">
+                <span class="day">13 April</span>
+                <span class="year">2018</span>
+              </div>
+              <div class="info-content-text">
+                <p>COACHELLA MUSIC FESTIVAL</p>
+                <div class="wrap">
+                  <span class="location"><i class="fa-solid fa-location-dot"></i> Indio,California,U.S.A</span>
+                  <span class="date"><i class="fa-regular fa-clock"></i> April 13-22,2018</span>  
+                </div>
+                <button class="main-btn">buy ticket</button>
+              </div>
+            </div>
+            <div class="info-content ">
+              <div class="info-content-date">
+                <span class="day">13 April</span>
+                <span class="year">2018</span>
+              </div>
+              <div class="info-content-text">
+                <p>COACHELLA MUSIC FESTIVAL</p>
+                <span class="location"><i class="fa-solid fa-location-dot"></i> Indio,California,U.S.A</span>
+                <span class="date"><i class="fa-regular fa-clock"></i> April 13-22,2018</span>
+                <button class="main-btn">buy ticket</button>
+              </div>
+            </div>
+            <div class="info-content ">
+              <div class="info-content-date">
+                <span class="day">13 April</span>
+                <span class="year">2018</span>
+              </div>
+              <div class="info-content-text">
+                <p>COACHELLA MUSIC FESTIVAL</p>
+                <span class="location"><i class="fa-solid fa-location-dot"></i> Indio,California,U.S.A</span>
+                <span class="date"><i class="fa-regular fa-clock"></i> April 13-22,2018</span>
+                <button class="main-btn">buy ticket</button>
+              </div>
+            </div>
+            <div class="info-content ">
+              <div class="info-content-date">
+                <span class="day">13 April</span>
+                <span class="year">2018</span>
+              </div>
+              <div class="info-content-text">
+                <p>COACHELLA MUSIC FESTIVAL</p>
+                <span class="location"><i class="fa-solid fa-location-dot"></i> Indio,California,U.S.A</span>
+                <span class="date"><i class="fa-regular fa-clock"></i> April 13-22,2018</span>
+                <button class="main-btn">buy ticket</button>
+              </div>
+            </div>
+          </div>
+          <div class="image col-lg-6">
+            <img src="images/10.jpg" alt="">
+          </div>
+        </div>
+        <div class="heading">
+          <button class="main-btn">view more tour</button>
+        </div>
+
+      </div>
+    </section>
+    <!-- end tours -->
+    <!-- start music -->
+    <section class="music" id="music">
+      <div class="container">
+        <div class="heading">
+            <h2>featured music</h2>
+            <img src="images/head.png"/>
+            <p>rise your emition & wishes to expend pleasure time with us</p>
+        </div>
+        <div class="buttons">
+            <button class="main-btn active-btn" id="audio-btn">audio</button>
+            <button class="main-btn" id="video-btn">video</button>
+            <button class="main-btn" id="album-btn">album</button>
+        </div>
+        <div class="audio">
+          <div class="row gy-5 pt-5 pb-5 audio">
+            <div class="music-image col-lg-5 ">
+              <img src="images/13.png" alt="">
+              <p>sia</p>
+            </div>
+            <div class="col-lg-7 center">
+              <div class="music-player">
+                  <h2 class="music-name">song name</h2>
+                  <p class="artist-name">artist</p>
+                  <div class="disk play"></div>
+                  <div class="song-slider">
+                    <input type="range" value="0" class="seek-bar">
+                    <span class="current-time">00:00</span>                 
+                    <span class="song-duration">00:00</span>                 
+                  </div>
+                  <div class="controls">
+                    <button class="btn backward-btn"><img src="images/pre.png" alt=""></button>
+                    <button class="play-btn pause">
+                      <span></span>
+                      <span></span>
+                    </button>
+                    <button class="btn forward-btn"><img src="images/nxt.png" alt=""></button>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="heading">
+            <button class="main-btn">view more music</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end music -->
+    <!-- start photos -->
+    <section class="photo" id="gallary">
+        <div class="container">
+          <div class="heading">
+            <h2>BEST PHOTO FRAME</h2>
+            <img src="images/head.png"/>
+            <p>rise your emition & wishes to expend pleasure time with us</p>
+          </div>
+        </div>
+        <div class="row g-0 pt-5 pb-5">
+            <div class="box col-lg-4">
+              <img src="images/03.jpg" alt="">
+              <img src="images/07.jpg" alt="">
+            </div>
+            <div class="box col-lg-4">
+              <img src="images/04.jpg" alt="">
+              <img src="images/09.jpg" alt="" style="height: 674px;">
+            </div>
+            <div class="box col-lg-4">
+              <img src="images/05.jpg" alt="" style="height: 674px;">
+              <img src="images/11.jpg" alt="">
+            </div>
+        </div>
+        <div class="container">
+          <div class="heading">
+            <button class="main-btn">view more photos</button>
+          </div>
+        </div>
+    </section>
+    <!-- end photos -->
+
+        <!--Start News-->
+        <section class="news" id="blog">
+          <div class="container">
+              <div class="heading">
+                  <h2>latest news</h2>
+                  <img src="images/head.png"/>
+              </div>
+              <div class="row pt-5 pb-5 justify-content-center">
+                  <div class="col-lg-4 col-sm-6">
+                      <div class="box">
+                          <div class="overflow-hidden">
+                              <img src="images/04.jpg"/>
+                          </div>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime incidunt aliquid atque?</p>
+                          <div class="details">
+                              <span><i class="fas fa-user"></i>post by admin</span>
+                              <span><i class="far fa-clock"></i>28 Feb,2018</span>
+                              <span><i class="fas fa-comment-alt"></i>2,222</span>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="col-lg-4 col-sm-6">
+                      <div class="box">
+                          <div class="overflow-hidden">
+                              <img src="images/08.jpg"/>
+                          </div>
+                         
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime incidunt aliquid atque?</p>
+                          <div class="details">
+                              <span><i class="fas fa-user"></i>post by admin</span>
+                              <span><i class="far fa-clock"></i>28 Feb,2018</span>
+                              <span><i class="fas fa-comment-alt"></i>2,222</span>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="col-lg-4 col-sm-6">
+                      <div class="box">
+                          <div class="overflow-hidden">
+                              <img src="images/06.jpg"/>
+                          </div>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime incidunt aliquid atque?</p>
+                          <div class="details">
+                              <span><i class="fas fa-user"></i>post by admin</span>
+                              <span><i class="far fa-clock"></i>28 Feb,2018</span>
+                              <span><i class="fas fa-comment-alt"></i>2,222</span>
+                          </div>
+                      </div>
+                  </div>
+                  
+              </div>
+              <div class="heading">
+                <button class="main-btn">view more news</button>
+              </div>
+          </div>
+      </section>
+      <!--End News-->
+      <!--Start back-->
+        <section class="back">
+          <div class="cover">
+            <div class="container">
+                <div class="info">
+                    <h2>subscribe to the newsletter</h2>
+                    <p class="d-none d-sm-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic illo aliquam delectus ratione eum, autem accusantium quas mollitia aut nisi quia, explicabo odio. Nesciunt.</p>
+                    <form>
+                        <input type="email" placeholder="Your Email Addrss"/>
+                        <button type="submit" class="main-btn active-btn">subscribe now</button>
+                    </form>
+                </div>
+            </div>
+          </div>
+        </section>
+      <!--End back-->
+
+      <!--Start slider-->
+        <section class="slider" id="artists">
+          <div class="owl-carousel owl-theme">
+              <div>
+                  <div class="img-over">
+                      <div class="overlay">
+                          <div class="center-column">
+                              <i class="fab fa-instagram"></i>
+                              <span>@singmusic</span>
+                          </div>
+                      </div>
+                      <img src="images/01.jpg"/>
+                  </div>
+              </div>
+              <div>
+                  <div class="img-over">
+                      <div class="overlay">
+                          <div class="center-column">
+                              <i class="fab fa-instagram"></i>
+                              <span>@singmusic</span>
+                          </div>
+                      </div>
+                      <img src="images/14.jpg"/>
+                  </div>
+              </div>
+              <div>
+                  <div class="img-over">
+                      <div class="overlay">
+                          <div class="center-column">
+                              <i class="fab fa-instagram"></i>
+                              <span>@singmusic</span>
+                          </div>
+                      </div>
+                      <img src="images/15.jpg"/>
+                  </div>
+              </div>
+              <div>
+                  <div class="img-over">
+                      <div class="overlay">
+                          <div class="center-column">
+                              <i class="fab fa-instagram"></i>
+                              <span>@singmusic</span>
+                          </div>
+                      </div>
+                      <img src="images/16.jpg"/>
+                  </div>
+              </div>
+              <div>
+                  <div class="img-over">
+                      <div class="overlay">
+                          <div class="center-column">
+                              <i class="fab fa-instagram"></i>
+                              <span>@singmusic</span>
+                          </div>
+                      </div>
+                      <img src="images/17.jpg"/>
+                  </div>
+              </div>
+              <div>
+                  <div class="img-over">
+                      <div class="overlay">
+                          <div class="center-column">
+                              <i class="fab fa-instagram"></i>
+                              <span>@singmusic</span>
+                          </div>
+                      </div>
+                      <img src="images/18.jpg"/>
+                  </div>
+              </div>
+              <div>
+                  <div class="img-over">
+                      <div class="overlay">
+                          <div class="center-column">
+                              <i class="fab fa-instagram"></i>
+                              <span>@singmusic</span>
+                          </div>
+                      </div>
+                      <img src="images/19.jpg"/>
+                  </div>
+              </div>
+              <div>
+                  <div class="img-over">
+                      <div class="overlay">
+                          <div class="center-column">
+                              <i class="fab fa-instagram"></i>
+                              <span>@singmusic</span>
+                          </div>
+                      </div>
+                      <img src="images/20.jpg"/>
+                  </div>
+              </div>
+              <div>
+                  <div class="img-over">
+                      <div class="overlay">
+                          <div class="center-column">
+                              <i class="fab fa-instagram"></i>
+                              <span>@singmusic</span>
+                          </div>
+                      </div>
+                      <img src="images/21.jpg"/>
+                  </div>
+              </div>
+              <div>
+                  <div class="img-over">
+                      <div class="overlay">
+                          <div class="center-column">
+                              <i class="fab fa-instagram"></i>
+                              <span>@singmusic</span>
+                          </div>
+                      </div>
+                      <img src="images/05.jpg"/>
+                  </div>
+              </div>
+              <div>
+                  <div class="img-over">
+                      <div class="overlay">
+                          <div class="center-column">
+                              <i class="fab fa-instagram"></i>
+                              <span>@singmusic</span>
+                          </div>
+                      </div>
+                      <img src="images/10.jpg"/>
+                  </div>
+              </div>
+              <div>
+                  <div class="img-over">
+                      <div class="overlay">
+                          <div class="center-column">
+                              <i class="fab fa-instagram"></i>
+                              <span>@singmusic</span>
+                          </div>
+                      </div>
+                      <img src="images/11.jpg"/>
+                  </div>
+              </div>
+              <div>
+                  <div class="img-over">
+                      <div class="overlay">
+                          <div class="center-column">
+                              <i class="fab fa-instagram"></i>
+                              <span>@singmusic</span>
+                          </div>
+                      </div>
+                      <img src="images/14.jpg"/>
+                  </div>
+              </div>
+          </div>
+        </section>        
+  <!--End slider-->
+
+      <!--Start contact-->
+      <section class="contact" id="contact">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png"/>
+            </div>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eum iusto voluptatibus sunt? Laboriosam, adipisci aspernatur minus cum voluptatem pariatur.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Egypt, Cairo</span>
+                            <span>Nasr city, st 201</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="info">
+                            <i class="fas fa-envelope"></i>
+                            <span>sing@gmail.com</span>
+                            <span>sing.song@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+               <div class="col-md-4">
+                <div class="box">
+                    <div class="info">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+20 01001733917</span>
+                        <span>+20 01001733917</span>
+                    </div>
+                </div>
+               </div>
+            </div>
+            <div class="footer">
+                <p>2022 &copy; <span>sing</span> music website. all right reserved</p>
+                <p>design & develop with <span>mohamed amir</span></p>
+            </div>
+        </div>
+    </section>
+    <!--End contact-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
