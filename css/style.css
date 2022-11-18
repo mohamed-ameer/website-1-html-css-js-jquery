@@ -21,6 +21,7 @@ body{
     font-family: "Raleway", sans-serif;
     color: #fff;
     background-color:var(--bg-color) ;
+    position: relative;
 }
 .container{
     width: 1200px;
@@ -811,7 +812,7 @@ button.active-btn{
     color: #fff;
 }
 .loader-container{
-    position: absolute;
+    position: fixed;
     inset: 0;
     background-color: #051024;
     z-index: 9999999;
